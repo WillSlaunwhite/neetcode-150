@@ -18,3 +18,8 @@ hs_err_pid*
 .idea/
 *.iml
 *.iws
+
+# Anaconda environment 
+./envs
+.condarc
+.empty
