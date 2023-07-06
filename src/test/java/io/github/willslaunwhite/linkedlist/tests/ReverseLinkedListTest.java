@@ -1,4 +1,4 @@
-package io.github.willslaunwhite.linkedlist.tests.reverseLinkedList;
+package io.github.willslaunwhite.linkedlist.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
