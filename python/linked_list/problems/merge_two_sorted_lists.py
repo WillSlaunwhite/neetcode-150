@@ -27,7 +27,7 @@ def merge_two_sorted_lists_iterative(
             prev.next = list2
             list2 = list2.next
         prev = prev.next
-    prev.next = list1 if list1 != None else list2
+    prev.next = list1 or list2
 
     return head.next
 
@@ -35,10 +35,8 @@ def merge_two_sorted_lists_iterative(
 def merge_two_sorted_lists_recursive(
     list1: Optional[ListNode], list2: Optional[ListNode]
 ) -> Optional[ListNode]:
-    if list2 is None:
-        return list1
-    if list1 is None:
-        return list2
+    if not list1 or not list2:
+        return list1 or list2
 
     if list1.val < list2.val:
         list1.next = merge_two_sorted_lists_recursive(list1.next, list2)
