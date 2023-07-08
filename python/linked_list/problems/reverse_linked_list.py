@@ -2,7 +2,7 @@ from typing import Optional
 from linked_list.list_node import ListNode
 
 
-def reverse_linked_list_iterative(head: Optional["ListNode"]) -> Optional["ListNode"]:
+def reverse_linked_list_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
     """
     Reverse the input linked list recursively.
 
@@ -20,6 +20,7 @@ def reverse_linked_list_iterative(head: Optional["ListNode"]) -> Optional["ListN
         head.next = prev
         prev = head
         head = next
+    return prev
 
 
 def reverse(

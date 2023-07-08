@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Any, Optional
 from python.linked_list.list_node import ListNode
 
 
@@ -16,8 +16,8 @@ def merge_two_sorted_lists(
     Returns:
         head of a single sorted list
     """
-    head: ListNode = ListNode(0)
-    prev: ListNode = head
+    head: Optional[ListNode] = ListNode(0)
+    prev: Optional[ListNode] = head
 
     while list1 and list2:
         if list1.val < list2.val:

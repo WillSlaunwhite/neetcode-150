@@ -1,7 +1,7 @@
 from typing import Any, Callable, Optional
 import pytest
 
-from python.linked_list.list_node import ListNode
+from linked_list.list_node import ListNode
 
 
 @pytest.fixture
