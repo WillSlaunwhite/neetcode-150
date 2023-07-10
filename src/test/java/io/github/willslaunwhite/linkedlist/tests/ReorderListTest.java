@@ -37,13 +37,13 @@ public class ReorderListTest {
         assertEquals(3, reorderedList.next.next.next.val);
     }
 
-    // @Test
+    @Test
     public void testReorderListNull() {
         head = null;
 
-        ListNode mergedList = solution.reorderList(head);
+        ListNode reorderedList = solution.reorderList(head);
 
-        assertNull(mergedList);
+        assertNull(reorderedList);
     }
 
     @Test

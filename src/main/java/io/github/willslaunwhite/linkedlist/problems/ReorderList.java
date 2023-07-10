@@ -8,6 +8,9 @@ import io.github.willslaunwhite.linkedlist.ListNode;
 
 public class ReorderList {
     public ListNode reorderList(ListNode head) {
+        if (head == null) {
+            return null;
+        }
         ListNode slow = head;
         ListNode fast = head.next;
         while (fast != null && fast.next != null) {
