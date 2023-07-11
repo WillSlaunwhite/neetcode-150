@@ -1,4 +1,6 @@
+from typing import Optional
 from linked_list.problems.reorder_list import reorder_list
+from linked_list.list_node import ListNode
 
 
 def test_reorder_list_first_case(

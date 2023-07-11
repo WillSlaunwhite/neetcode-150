@@ -8,8 +8,9 @@ public class RemoveNthNodeFromEnd {
             return null;
         }
 
-        ListNode right = head;
         ListNode dummy = new ListNode(0, head);
+        ListNode right = head;
+
         while (n > 0) {
             right = right.next;
             n--;
