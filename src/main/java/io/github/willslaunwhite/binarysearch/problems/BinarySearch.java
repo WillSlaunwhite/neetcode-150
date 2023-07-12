@@ -1,4 +1,4 @@
-package io.github.willslaunwhite.array.binarysearch;
+package io.github.willslaunwhite.binarysearch.problems;
 
 public class BinarySearch {
    public int binarySearch(int[] nums, int target) {

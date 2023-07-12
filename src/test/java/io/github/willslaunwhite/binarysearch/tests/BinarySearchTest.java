@@ -1,11 +1,11 @@
-package io.github.willslaunwhite.binarysearch;
+package io.github.willslaunwhite.binarysearch.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import io.github.willslaunwhite.array.binarysearch.BinarySearch;
+import io.github.willslaunwhite.binarysearch.problems.BinarySearch;
 
 public class BinarySearchTest {
     private int[] input;
